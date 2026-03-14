@@ -32,7 +32,7 @@ export default function Home() {
         className="mx-auto w-full"
         style={{
           maxWidth: "1200px",
-          padding: "6rem 1.5rem",
+          padding: "6rem clamp(1.5rem, 4vw, 3rem)",
         }}
       >
         <p className="font-mono text-[13px] text-[var(--accent)] mb-2">

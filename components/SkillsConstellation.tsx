@@ -7,11 +7,11 @@ import type { SkillGroup } from "@/data/skills";
 
 // ── Cluster centre positions ──
 const CLUSTER_CENTRES: Record<SkillGroup, { x: number; y: number }> = {
-  languages: { x: 180, y: 260 },
-  engines: { x: 400, y: 140 },
-  systems: { x: 650, y: 200 },
-  design: { x: 400, y: 390 },
-  tools: { x: 820, y: 350 },
+  languages: { x: 220, y: 260 },
+  engines: { x: 440, y: 140 },
+  systems: { x: 690, y: 200 },
+  design: { x: 440, y: 390 },
+  tools: { x: 860, y: 350 },
 };
 
 const GROUP_ORDER: SkillGroup[] = [
