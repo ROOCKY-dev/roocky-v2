@@ -30,8 +30,11 @@ export default function ProjectCard({ project }: { project: Project }) {
       {/* Name + description */}
       <div className="mb-4 flex-1">
         <h3
-          className="font-display font-bold text-[var(--fg-primary)]"
-          style={{ fontSize: isFeatured ? "22px" : "18px" }}
+          className="font-bold text-[var(--fg-primary)]"
+          style={{
+            fontFamily: "var(--font-display)",
+            fontSize: isFeatured ? "22px" : "18px",
+          }}
         >
           {project.name}
         </h3>
