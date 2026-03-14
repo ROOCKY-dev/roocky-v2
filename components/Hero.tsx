@@ -23,7 +23,7 @@ function TypewriterText({
 
   return (
     <motion.span
-      className={`inline-block ${className}`}
+      className={`inline whitespace-pre-wrap ${className}`}
       initial="hidden"
       animate="visible"
       variants={{
@@ -120,7 +120,7 @@ export default function Hero() {
   }, [showLine3, prefersReduced]);
 
   return (
-    <section className="relative h-dvh flex items-center overflow-hidden bg-[var(--bg-primary)]">
+    <section className="relative h-dvh flex items-center overflow-hidden overflow-x-hidden bg-[var(--bg-primary)]">
       {/* Scanline overlay */}
       <div
         className="pointer-events-none absolute inset-0 z-10"
@@ -133,7 +133,7 @@ export default function Hero() {
 
       {/* Content */}
       <div
-        className="relative z-20 flex flex-col"
+        className="relative z-20 flex flex-col justify-center h-dvh w-full"
         style={{
           paddingLeft: "clamp(1.5rem, 8vw, 6rem)",
           gap: 0,
@@ -163,7 +163,7 @@ export default function Hero() {
             animate={{ opacity: 0.85 }}
             transition={{ duration: prefersReduced ? 0 : 0.01 }}
             className="font-mono"
-            style={{ fontSize: "clamp(1.2rem, 3vw, 2rem)" }}
+            style={{ fontSize: "clamp(0.95rem, 2.8vw, 2rem)" }}
           >
             <TypewriterText
               text="> CS student. Builder. Foundation."
