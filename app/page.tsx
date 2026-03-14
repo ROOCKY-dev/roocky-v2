@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import ProjectGrid from "@/components/ProjectGrid";
+import SkillsConstellation from "@/components/SkillsConstellation";
 
 export default function Home() {
   return (
@@ -26,6 +27,23 @@ export default function Home() {
       </section>
 
       {/* Skills */}
+      <section
+        id="skills"
+        className="mx-auto w-full"
+        style={{
+          maxWidth: "1200px",
+          padding: "6rem 1.5rem",
+        }}
+      >
+        <p className="font-mono text-[13px] text-[var(--accent)] mb-2">
+          {"// skills"}
+        </p>
+        <h2 className="font-display text-3xl font-bold text-[var(--fg-primary)] mb-10">
+          stack
+        </h2>
+        <SkillsConstellation />
+      </section>
+
       {/* Journey */}
       {/* Contact */}
     </main>
