@@ -58,6 +58,22 @@
   transition: color 1.5s ease, border-color 1.5s ease, background-color 1.5s ease;
 }
 
+/* ── StatusDot pulse animation ── */
+@keyframes status-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+.status-dot-pulse {
+  animation: status-pulse 2s ease-in-out infinite;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

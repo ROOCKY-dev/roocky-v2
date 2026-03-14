@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk, JetBrains_Mono, Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { MoodProvider } from "@/components/MoodProvider";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -54,7 +55,9 @@ export default function RootLayout({
       <body
         className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} ${inter.variable} antialiased`}
       >
-        {children}
+        <MoodProvider>
+          {children}
+        </MoodProvider>
         <Analytics />
         <SpeedInsights />
       </body>
