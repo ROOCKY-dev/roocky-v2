@@ -58,6 +58,12 @@
   transition: color 1.5s ease, border-color 1.5s ease, background-color 1.5s ease;
 }
 
+/* ── Hero blinking cursor ── */
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
 /* ── StatusDot pulse animation ── */
 @keyframes status-pulse {
   0%, 100% {
